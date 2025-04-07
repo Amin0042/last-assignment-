@@ -1,13 +1,38 @@
+/* ======================= setup =======================*/
+
+/* ======================= Base =======================*/
+
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #fff;
+}
+h1 {
+    font-size: 2.027rem;
+}
+
+h2 {
+    font-size: 1.802rem;
+}
+
+h3 {
+    font-size: 1.266rem;
+}
+
 .wrapper {
     max-width: 1200px;
 }
 
-body {
-    font-family: Poppins;
-    background-color: #fff;
+.flex {
+    display: flex;
+    gap: 1rem
 }
 
-.photos div {
+/* ======================= header =======================*/
+
+
+/* ======================= hero =======================*/
+.hero div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -16,39 +41,42 @@ body {
         "img2 img3 img4";
 }
 
-.photos .photo:nth-child(1) {
+.hero .photo:nth-child(1) {
     grid-area: img1;
 }
 
-.photos .photo:nth-child(2) {
+.hero .photo:nth-child(2) {
     grid-area: img2;
 }
 
-.photos .photo:nth-child(3) {
+.hero .photo:nth-child(3) {
     grid-area: img3;
 }
 
-.photos .photo:nth-child(4) {
+.hero .photo:nth-child(4) {
     grid-area: img4;
 }
+/* ======================= intro =======================*/
 
-.h1 {
-    font-size: 2.027rem;
-}
+/* =======================  dough ===============*/
 
-.h2 {
-    font-size: 1.802rem;
-}
-
-.h3 {
-    font-size: 1.266rem;
-}
-
-.behind-the-dough {
+.dough {
     background-color: #f8fafc;
 }
 
-.what-people-are-saying {
+/* ======================= social =======================*/
+.social {
     background-color: #000;
     color: #fff;
 }
+/* ======================= flavour =======================*/
+
+/* ======================= footer =======================*/
+
+
+
+
+
+
+
+
