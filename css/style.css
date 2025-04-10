@@ -7,6 +7,7 @@ body {
     font-family: Poppins, sans-serif;
     background-color: #fff;
 }
+
 h1 {
     font-size: 2.027rem;
 }
@@ -18,9 +19,12 @@ h2 {
 h3 {
     font-size: 1.266rem;
 }
-a {
+
+nav a {
     text-decoration: none;
+    color: #000;
 }
+
 li {
     list-style: none;
 }
@@ -30,29 +34,41 @@ li {
     margin: 0 auto;
 }
 
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 .flex {
     display: flex;
-    gap: 1rem
+    gap: 1rem;
 }
+
 
 /* ======================= header =======================*/
 .header {
     justify-content: space-between;
     align-items: center;
-    padding:   2rem 0;
+    padding: 2rem 0;
 }
 
-.nav-links{
-    justify-content:space-between ;
+.nav-links {
+    justify-content: space-between;
 }
-.nav-item, .nav-item:visited{
+
+.nav-item,
+.nav-item:visited {
     color: #000;
     font-size: 2.027rem;
     font-weight: 700;
 }
 
+.logo {
+    width: 25%;
+}
+
 /* ======================= hero =======================*/
-.hero div {
+.sweetheart-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -62,46 +78,134 @@ li {
         "img2 img3 img4";
 }
 
-.photo {
-    width: 100%;
-    border-radius: 10px;
+#bold {
+    font-weight: bold;
 }
-.hero .photo:nth-child(1) {
+
+.sweetheart-grid .photo:nth-child(1) {
     grid-area: img1;
 }
 
-.hero .photo:nth-child(2) {
+.sweetheart-grid .photo:nth-child(2) {
     grid-area: img2;
 }
 
-.hero .photo:nth-child(3) {
+.sweetheart-grid .photo:nth-child(3) {
     grid-area: img3;
 }
 
-.hero .photo:nth-child(4) {
+.sweetheart-grid .photo:nth-child(4) {
     grid-area: img4;
 }
+
+.bold {
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+    border-radius: .5em;
+    padding: 1em;
+    display: inline-block;
+}
+
+.button {
+    padding-bottom: 5em;
+}
+
+
 /* ======================= intro =======================*/
 
 /* =======================  dough ===============*/
 
 .dough {
     background-color: #f8fafc;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 /* ======================= social =======================*/
 .social {
     background-color: #000;
     color: #fff;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
+
+#comment h2 {
+    text-align: center;
+}
+
 /* ======================= flavour =======================*/
+.flavour .wrapper .product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+
+
+}
+
+.card {
+    border-radius: 20px;
+    background-color: #f8fafc;
+    text-align: center;
+}
 
 /* ======================= footer =======================*/
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: .2em;
+    margin-top: 1em;
+}
+
+@media (min-width:768px) {
+    .sweetheart-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4";
+    }
 
 
 
+    .dough h2 {
+        text-align: center;
+    }
+
+    .behind {
+        display: flex;
+        background-color: #f8fafc;
+        padding-top: 5em;
+        padding-bottom: 5em;
+        gap: 1rem;
+    }
+
+    .social .people {
+        display: flex;
+        background-color: #000;
+        color: #fff;
+        padding-top: 5em;
+        padding-bottom: 5em;
+        gap: 1rem;
+    }
 
 
+    .flavour {
+        text-align: center;
+    }
 
+    .flavour .wrapper .product {
+        display: flex;
 
+    }
+}
 
+@media(min-width:960px) {
+    .hero {
+        display: flex;
+        gap: 2rem;
+    }
+}
